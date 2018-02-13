@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+
 import StyledFooter from './components/StyledFooter'
 import StyledSection from './components/StyledSection'
 import Loader from './components/Loader'
+import Title from './components/Title'
+import Heatmap from './components/Heatmap'
 class App extends Component {
 	state = {
 		isFetching: false,
@@ -35,11 +38,12 @@ class App extends Component {
 
 	render() {
 		const { isFetching, error, data } = this.state
-		console.log(data)
 		return (
 			<StyledSection>
+				<Title />
 				{isFetching && <Loader>Fetching data</Loader>}
 				{error && <p>{error}</p>}
+				{data && <Heatmap data={data} />}
 				<StyledFooter />
 			</StyledSection>
 		)

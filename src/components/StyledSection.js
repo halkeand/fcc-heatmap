@@ -7,7 +7,7 @@ const StyledSection = styled.section`
    display flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-font-family: 'Arimo', sans-serif;
+	justify-content: space-around;
+ font-family: 'Arimo', sans-serif;
 `
 export default ({ children }) => <StyledSection>{children}</StyledSection>

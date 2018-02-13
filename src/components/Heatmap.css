@@ -1,0 +1,94 @@
+:root {
+	font-size: 12px;
+}
+.heatmap {
+	border-collapse: collapse;
+	width: 80%;
+	height: 400px;
+	table-layout: fixed;
+	margin-left: 100px; /*cf Hack month-header-cell*/
+}
+
+.month-header-cell {
+	margin-left: -100px;
+}
+.cell-no-color {
+	background-color: #ffbf;
+}
+
+.cell-color-0 {
+	background-image: linear-gradient(to top left, #1b1464, #2b1480);
+}
+
+.cell-color-1 {
+	background-image: linear-gradient(to top left, #1289a7, #1240a7);
+}
+
+.cell-color-2 {
+	background-image: linear-gradient(to top left, #009432, #107450);
+}
+
+.cell-color-3 {
+	background-image: linear-gradient(to top left, #c4e538, #d4e200);
+}
+
+.cell-color-4 {
+	background-image: linear-gradient(to top left, #ffc312, #ffc362);
+}
+
+.cell-color-5 {
+	background-image: linear-gradient(to top left, #f79f1f, #f77f1f);
+}
+
+.cell-color-6 {
+	background-image: linear-gradient(to top left, #ee5a24, #ee8a40);
+}
+
+.cell-color-7 {
+	background-image: linear-gradient(to top left, #ea2027, #ee5a24);
+}
+
+.cell-color-8 {
+	background-image: linear-gradient(to top left, #ed4c67, #ed4c90);
+}
+
+.cell-color-9 {
+	background-image: linear-gradient(to top left, #b53471, #c53450);
+}
+
+.legend-and-infos-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	min-height: 125px;
+}
+
+.hovered-data-infos {
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.legend {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.color-legend {
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+}

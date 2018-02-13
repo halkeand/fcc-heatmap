@@ -3,10 +3,6 @@ import styled from 'styled-components'
 
 const Section = styled.footer`
 	height: 100px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	align-self: stretch;
 	display: flex;
 	flex-direction: column;
@@ -20,7 +16,7 @@ const Section = styled.footer`
 		border-radius: 3px;
 		background-image: linear-gradient(to top left, #44bd32, #4cd137);
 		text-decoration: none;
-		padding: 5px;
+		padding: 7px;
 		color: white;
 		border-bottom: 4px solid transparent;
 		box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0);
